@@ -1,0 +1,42 @@
+.shop-nav-a {
+  color: #000;
+}
+
+.shop-nav-a:hover {
+  color: #fff;
+}
+
+.table-shop input,
+.table-shop .shop-sure,
+.table-shop .shop-cancel {
+  display: none;
+}
+
+.edit input,
+.edit .shop-sure,
+.edit .shop-cancel {
+  display: inline;
+}
+
+.edit span,
+.edit .shop-edit,
+.edit .shop-del {
+  display: none;
+}
+
+.shop-my {
+  margin: 20px 0 20px;
+}
+
+.shop-add {
+  font-size: 16px;
+}
+
+.shop-logo {
+  height: 50px;
+}
+
+.shop-hide {
+  display: none;
+}
+

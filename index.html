@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>shop</title>
+  <link rel="stylesheet" href="./libs/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/index.css">
+  <script src="./libs/jquery-3.4.1.min.js"></script>
+  <script src="./libs/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+  <script src="./js/utils.js"></script>
+</head>
+
+<body>
+  <nav class="navbar navbar-inverse">
+    <div class="container">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+            data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="" href="#"></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#" class="shop-nav-a">首页 <span class="sr-only">(current)</span></a></li>
+            <li><a href="#" class="shop-nav-a">其他页面</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right" id="shop-login">
+            <li><a href="./html/login.html" class="shop-nav-a">登录</a></li>
+            <li><a href="./html/register.html" class="shop-nav-a">注册</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right shop-hide" id="shop-out">
+            <li><a href="javascript:;" class="shop-nav-a">欢迎<span id="shop-span"></span></a></li>
+            <li><a href="javascript:;" class="shop-nav-a">退出登录</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <button class="btn btn-primary btn-lg shop-my shop-add" data-toggle="modal" data-target="#addShop">添加商品</button>
+    <table class="table table-bordered table-striped table-hover text-center table-shop">
+      <thead>
+        <tr>
+          <th class="text-center">编号</th>
+          <th class="text-center">商品名称</th>
+          <th class="text-center">商品价格</th>
+          <th class="text-center">商品数量</th>
+          <th class="text-center">操作</th>
+        </tr>
+      </thead>
+      <tbody id="shop-table">
+        <!-- <tr>
+          <td>1</td>
+          <td><span class="">苹果</span><input type="text" name="" id="shop-input-name" class="form-control "></td>
+          <td><span class="">20</span><input type="text" name="" id="shop-input-price" class="form-control"></td>
+          <td><span class="">1</span><input type="text" name="" id="shop-input-num" class="form-control"></td>
+          <td>
+            <button class="btn btn-info btn-sm shop-edit">编辑</button>
+            <button class="btn btn-danger btn-sm shop-del">删除</button>
+            <button class="btn btn-success btn-sm shop-sure">确定</button>
+            <button class="btn btn-warning btn-sm shop-cancel">取消</button>
+          </td>
+        </tr> -->
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Modal -->
+  <div class="modal fade" id="addShop" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+              aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="myModalLabel">添加商品</h4>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="shop-name">商品名称</label>
+              <input type="text" class="form-control" id="shop-name" placeholder="请输入商品名称">
+            </div>
+            <div class="form-group">
+              <label for="shop-price">商品价格</label>
+              <input type="text" class="form-control" id="shop-price" placeholder="请输入商品价格">
+            </div>
+            <div class="form-group">
+              <label for="shop-num">商品数量</label>
+              <input type="text" class="form-control" id="shop-num" placeholder="请输入商品数量">
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+          <button type="button" class="btn btn-primary" id="shop-add">添加</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="./js/select.js"></script>
+  <script src="./js/update.js"></script>
+  <script src="./js/delete.js"></script>
+  <script src="./js/add.js"></script>
+  <script src="./js/index.js"></script>
+</body>
+
+</html>
